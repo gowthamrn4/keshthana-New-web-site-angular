@@ -15,10 +15,7 @@ export class HomeComponent implements OnInit{
   constructor( public router:Router) { }
 
   ngOnInit() {
-    $('button').click(function(){
-      alert("hiiiiiii");
-      $('p').css("background-color","red");
-    });
+   
   
    this.galleryMasonaryLayout();
    this.revolutionSliderActiver();

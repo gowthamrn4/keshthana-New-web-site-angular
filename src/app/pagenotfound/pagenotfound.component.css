@@ -1,0 +1,30 @@
+.content{
+    width:500px;
+    margin:0px auto;
+    padding-top:300px;
+   position: relative;
+   text-decoration:underline;
+}
+.container:hover{
+
+    transition:4s;
+    color:red
+}
+h1:hover{
+    transition:4s;
+    color:red
+}
+.btn{
+    position: absolute;   
+    left:200px;
+    width:100px;
+    box-shadow:5px 0px 80px 5px black;
+    border:3px black;
+    
+}
+.btn:hover{
+    background:black;
+    border:3px black;
+    color:white;
+    transition: 5s;
+}

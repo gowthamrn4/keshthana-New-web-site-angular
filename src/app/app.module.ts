@@ -32,6 +32,7 @@ import { EquipmentmacComponent } from './equipmentmac/equipmentmac.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { MediaComponent } from './media/media.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { MediaComponent } from './media/media.component';
     EquipmentmacComponent,
     ProductsComponent,
     ContactComponent,
-    MediaComponent
+    MediaComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
@@ -68,6 +70,7 @@ import { MediaComponent } from './media/media.component';
     HttpModule,
     RouterModule.forRoot([
       { path:'',pathMatch:'full',redirectTo:'landingpage' },
+      { path:'pagenotfound',component:PagenotfoundComponent},
       { path:'landingpage',component:LandingpageComponent, 
       children:[
         { path:'',pathMatch:'full',redirectTo:'home'},
@@ -106,7 +109,7 @@ import { MediaComponent } from './media/media.component';
     { path:'contact',component:ContactComponent},
     { path:'media',component:MediaComponent}
       ]},
-   
+
      
        ])
   ],
